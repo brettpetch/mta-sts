@@ -1,5 +1,8 @@
-const mode = 'testing';
-// const mode = 'enforce';
+// Change to `const mode = 'testing';` before moving to enforcement mode.
+// https://learn.microsoft.com/en-us/purview/enhancing-mail-flow-with-mta-sts
+// https://support.google.com/a/answer/9261504?hl=en
+
+const mode = 'enforce';
 const max_age = 604800; // 1 week
 
 addEventListener('fetch', (event) => {
